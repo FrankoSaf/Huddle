@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+*,*::after,*::before{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+:root{
+    font-size:62.5%;
+    font-family: 'Open Sans', sans-serif;
+}
+body{
+    font-size:1.6rem;
+    background-color: hsl(257, 40%, 49%);
+    color:white;
+}
+main,header{
+    padding:2.8rem 4rem;
+}
+main{
+    display:flex;
+    flex-direction: column;
+}
+header img{
+    width:15rem;
+    
+}
+
+.images img{
+    width:100%;
+
+}
+.pattern{
+    width:100%;
+    position:fixed;
+    z-index: -1;
+}
+.images{
+    margin-bottom:6rem;
+}
+.register{
+    text-align:center;
+}
+.register>*{
+    margin-bottom:2rem;
+}
+h1{
+    font-family: 'Poppins', sans-serif;
+}
+
+button{
+    width:20rem;
+    padding:1.5rem 0;
+    border-radius:10rem;
+    border:none;
+    color:hsl(257, 40%, 49%);
+    font-family: 'Poppins', sans-serif;
+    box-shadow:3px 3px 6px black;
+}
+footer{
+    text-align:center;
+    margin-top:5rem;
+}
+i{
+    margin-right:1rem;
+    border:white 1px solid;
+    padding:.5rem;
+    border-radius:50%;
+    display:inline-block;
+    width:3rem;
+    height:3rem;
+}
+button:hover, button:active{
+    background-color:hsl(300, 69%, 71%);
+    cursor:pointer;
+    color:white;
+    
+}
+i:hover, i:active{
+    color:hsl(300, 69%, 71%);
+    border:hsl(300, 69%, 71%) solid 1px;
+    cursor:pointer;
+}
+@media (min-width: 1440px){
+    body{
+        background:url(images/bg-desktop.svg) no-repeat center/contain hsl(257, 40%, 49%);
+        height:100vh;
+        width:100vw;
+        
+    }
+    main,header{
+        padding:2.8rem 10rem;
+    }
+    main{
+    flex-direction: row;
+
+    
+    }
+    .images{
+       min-width:58%
+    }
+    
+    h1{
+        font-size:3rem;
+        padding:0 10rem 0 0;
+    }
+    .register{
+        text-align:start;
+        padding:5rem 0 0 3rem;
+        max-width:42%;
+    }
+    .pattern{
+        display:none;
+    }
+    footer{
+        right:10rem;
+        position:absolute;
+        margin:0;
+        bottom:2rem;
+    }
+}
